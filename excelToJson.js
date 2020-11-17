@@ -8,7 +8,7 @@ let list = xlsxrd.parse(excelFilePath);
 let data = list[0].data;
 let result =[];
 _.forEach(data.slice(0),(d)=>{
-    result.push({name:d[0],age:d[1]});
+    result.push({key:d[1],value:d[2],enValue:d[3]});
 })
 console.log('原始数据:', JSON.stringify(list));
 
